@@ -9,3 +9,9 @@ require ROOT . '/vendor/autoload.php';
 $test = new \App\MainClass();
 
 echo "Last word length is " . $test::last_word('test testing. Test erwwq');
+echo  "<br>";
+echo "a date formatted in sql date format. " .
+    $test::sql_date_format(
+        "12/12/2014 02.02.02"
+    );
+echo  "<br>";

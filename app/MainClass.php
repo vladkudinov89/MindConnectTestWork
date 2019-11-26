@@ -10,4 +10,11 @@ class MainClass
 
         return strlen(array_pop($last)) ?? 0;
     }
+
+    public static function sql_date_format($dateStr)
+    {
+        $phpdate = strtotime( $dateStr );
+
+        return date( 'Y-m-d H:i:s', $phpdate );
+    }
 }
