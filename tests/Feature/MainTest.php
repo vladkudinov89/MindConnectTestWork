@@ -37,7 +37,10 @@ class MainTest extends TestCase
     public function time_sql()
     {
         $this->assertEquals(
-            (new DateTime())->setDate(2014, 2, 2)->setTime(0,0,0)->format('Y-m-d H:i:s'),
+            (new DateTime())
+                ->setDate(2014, 2, 2)
+                ->setTime(0,0,0)
+                ->format('Y-m-d H:i:s'),
             $this->time::sql_date_format("02/02/2014 00.00.00")
             );
     }
