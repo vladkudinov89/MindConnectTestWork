@@ -6,3 +6,6 @@ docker-down:
 
 docker-build:
 	docker-compose up --build -d
+
+test:
+	docker-compose exec app php ./vendor/bin/phpunit

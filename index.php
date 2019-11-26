@@ -7,4 +7,5 @@ define('ROOT', dirname(__FILE__));
 require ROOT . '/vendor/autoload.php';
 
 $test = new \App\MainClass();
-$test->index();
+
+echo "Last word length is " . $test::last_word('test testing. Test erwwq');
