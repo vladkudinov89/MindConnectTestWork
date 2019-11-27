@@ -20,3 +20,9 @@ make docker-up
 ```
 
 After start Docker you must visit ``http://localhost:8080`` page to start migration to PHP.
+
+## Testing project
+
+To start test  you have only type next command:
+```
+make test
