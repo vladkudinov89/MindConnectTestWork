@@ -7,12 +7,14 @@ class MainTest extends TestCase
 {
     private $word;
     private $time;
+    private $extracts;
 
     protected function setUp()
     {
         parent::setUp();
         $this->word = new MainClass();
         $this->time = new MainClass();
+        $this->extracts = new MainClass();
     }
 
     /** @test */
@@ -45,5 +47,33 @@ class MainTest extends TestCase
             );
     }
 
+    /** @test */
+    public function extract_string_one_bracket()
+    {
+       $this->assertEquals(
+               "brown fox"
+           ,
+           $this->extracts::extract_string('The quick [brown fox]')
+       );
+    }
 
+    /** @test */
+    public function extract_string_few_brackets()
+    {
+        $result = implode(["brown fox", "testing"] , ',');
+
+        $this->assertEquals(
+            $result,
+            $this->extracts::extract_string('The quick [brown fox]. Test [testing].')
+        );
+    }
+
+    /** @test */
+    public function extract_string_no_brackets()
+    {
+        $this->assertEquals(
+            '""',
+            $this->extracts::extract_string('Hello World.')
+        );
+    }
 }
