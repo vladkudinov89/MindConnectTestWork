@@ -11,6 +11,7 @@ Set your .env vars and then type:
 ```
 git clone <this_repo>
 docker-compose up -d
+docker-compose exec app composer install
 ```
 ## Usage
 
