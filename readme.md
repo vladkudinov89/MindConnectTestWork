@@ -19,10 +19,15 @@ To start your containers you have only type next command:
 make docker-up
 ```
 
-After start Docker you must visit ``http://localhost:8080`` page to start migration to PHP.
+After start Docker you must visit ``http://localhost:8080`` page to start.
 
 ## Testing project
 
 To start test  you have only type next command:
 ```
 make test
+
+```
+
+## Another answers in this link: 
+- [Answer](https://github.com/vladkudinov89/MindConnectTestWork/answer.md)
