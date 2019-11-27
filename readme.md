@@ -30,4 +30,4 @@ make test
 ```
 
 ## Another answers in this link: 
-- [Answer](https://github.com/vladkudinov89/MindConnectTestWork/answers.md)
+- [Answer](https://github.com/vladkudinov89/MindConnectTestWork/blob/master/answers.md)
